@@ -37,3 +37,9 @@ var obj = [
         console.log(j +":"+obj[i][j]);
      }
   }
+    obj.forEach(value =>{
+      let keyvalues = Object.entries(value);
+      keyvalues.forEach(vl=>{
+          console.log(vl[0]+":"+vl[1]);
+      })
+  });
