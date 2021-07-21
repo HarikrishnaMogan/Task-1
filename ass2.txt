@@ -22,3 +22,11 @@ var obj = [
     }
   
   }
+  
+    for(let i of obj)
+  {
+     for(let j in i)
+     {
+        console.log(j +":"+i[j]);
+     }
+  }
