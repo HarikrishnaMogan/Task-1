@@ -5,16 +5,20 @@ var obj = [
   ]
   for(let i=0;i<obj.length;i++)
   {
-      console.log(obj[i].person);
-      console.log(obj[i].age);
-      console.log(obj[i].company);
-
+    let keyvalues = Object.entries(obj[i]);
+    for(let j=0;j<keyvalues.length;j++)
+    {
+        console.log(keyvalues[j][0]+":"+keyvalues[j][1]);
+    }
+  
   }
   
-   for(let i of obj)
+  for(let i=0;i<obj.length;i++)
   {
-      console.log(i.person);
-      console.log(i.age);
-      console.log(i.company);
-
+    for(let j in obj[i])
+    {
+       
+       console.log(j +":"+obj[i][j]);
+    }
+  
   }
