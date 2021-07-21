@@ -30,3 +30,10 @@ var obj = [
         console.log(j +":"+i[j]);
      }
   }
+   for(let i in obj)
+  {
+     for(let j in obj[i])
+     {
+        console.log(j +":"+obj[i][j]);
+     }
+  }
