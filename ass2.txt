@@ -10,3 +10,11 @@ var obj = [
       console.log(obj[i].company);
 
   }
+  
+   for(let i of obj)
+  {
+      console.log(i.person);
+      console.log(i.age);
+      console.log(i.company);
+
+  }
