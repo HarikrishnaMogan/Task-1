@@ -43,3 +43,53 @@ var obj = [
           console.log(vl[0]+":"+vl[1]);
       })
   });
+ ---------------------------------------------------------------------------------------- 
+  var xhr = new XMLHttpRequest();
+xhr.open("GET","https://restcountries.eu/rest/v2/all");
+xhr.onload = function(){
+    var data = JSON.parse(this.response);
+    filtervalues(data);
+}
+xhr.send();
+
+ function filtervalues(values)
+ {
+     for(let i of values)
+     {
+         console.log(i.flag);
+     }
+ }
+ --------------------------------------------------------------------------
+ function filtervalues(values)
+ {
+     for(let i of values)
+     {
+         console.log(i.name);
+     }
+ }
+ ----------------------------------
+ 
+ function filtervalues(values)
+ {
+     for(let i of values)
+     {
+         console.log(i.region);
+     }
+ }
+ ---------------------------------------
+ function filtervalues(values)
+ {
+     for(let i of values)
+     {
+         console.log(i.subregion);
+     }
+ }
+ -----------------------------------
+ function filtervalues(values)
+ {
+     for(let i of values)
+     {
+         console.log(i.population);
+     }
+ }
+  
