@@ -12,7 +12,7 @@ var obj = [
     }
   
   }
-  
+  ------------------------------------------------------------
   for(let i=0;i<obj.length;i++)
   {
     for(let j in obj[i])
@@ -22,7 +22,7 @@ var obj = [
     }
   
   }
-  
+-----------------------------------------------------  
     for(let i of obj)
   {
      for(let j in i)
@@ -30,6 +30,7 @@ var obj = [
         console.log(j +":"+i[j]);
      }
   }
+-----------------------------------------------------
    for(let i in obj)
   {
      for(let j in obj[i])
@@ -37,13 +38,16 @@ var obj = [
         console.log(j +":"+obj[i][j]);
      }
   }
+ ------------------------------------------------ 
     obj.forEach(value =>{
       let keyvalues = Object.entries(value);
       keyvalues.forEach(vl=>{
           console.log(vl[0]+":"+vl[1]);
       })
   });
- ---------------------------------------------------------------------------------------- 
+ ---------------------------------------------------------------------------------------- ---------------------------
+ 
+ 
   var xhr = new XMLHttpRequest();
 xhr.open("GET","https://restcountries.eu/rest/v2/all");
 xhr.onload = function(){
