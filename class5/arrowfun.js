@@ -32,3 +32,33 @@ let sum =()=>{
 }
 sum();
 -------------------------------------------------
+  let num = [1,2,3,4,5,6,7,10,15,17];
+ let prime = (arr)=>{
+   let ans =[];
+   for(let i of arr)
+   {  let count =0;
+      if(i==2)
+      {
+        ans.push(i);
+      }
+      else{
+        for(let j=1;j<=i;j++)
+        {
+          if(i%j==0)
+          {
+            count++;
+          }
+          if(count>2){
+            break;
+          }
+    
+        }
+        if(count ==2)
+        {
+          ans.push(i);
+        }
+      }
+      }
+   return ans;
+}
+console.log(prime(num));
