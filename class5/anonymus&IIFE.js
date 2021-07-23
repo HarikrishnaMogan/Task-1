@@ -244,3 +244,30 @@ let median = function(){
 }
 median();
 ---------------------------------------------------------------------------------------------
+7)
+let arr =[1,2,3,4,4,2,1];
+let unique = function(){
+  let ans =[];
+  for(let i of arr)
+  {
+    if(!ans.includes(i))
+    {
+      ans.push(i);
+    }
+  }
+  return ans;
+}
+console.log(unique());
+-------------------------------------------
+(function(){
+  let ans =[];
+  for(let i of arr)
+  {
+    if(!ans.includes(i))
+    {
+      ans.push(i);
+    }
+  }
+  console.log(ans);
+})();
+----------------------------------------------------------------------------------------------------
