@@ -271,3 +271,25 @@ console.log(unique());
   console.log(ans);
 })();
 ----------------------------------------------------------------------------------------------------
+7)
+let arr =[1,2,3,4,5];
+let rotate = function(k){
+  for(let i=0;i<k;i++)
+  {
+    let temp = arr.pop()
+    arr.splice(0,0,temp);
+  }
+  console.log(arr);
+}
+rotate(3);
+-----------------------------------
+(function(k)
+{
+  for(let i=0;i<k;i++)
+  {
+    let temp = arr.pop()
+    arr.splice(0,0,temp);
+  }
+  console.log(arr);
+})(3);
+---------------------------------------------------------------------------------------------------------
