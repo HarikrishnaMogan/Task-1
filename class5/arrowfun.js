@@ -62,3 +62,32 @@ sum();
    return ans;
 }
 console.log(prime(num));
+-----------------------------------------
+  let txt = ["dad","mom","son"];
+let palindrome = (arr)=>{
+  let ans =[];
+     for(let i of arr)
+     {
+       let j=0;
+       let k = i.length-1;
+       let n = Math.trunc(i.length/2);
+       while(j<n)
+       {
+         if(i[j]==i[k])
+         {
+           j++;
+           k--;
+         }
+         else{
+           break;
+         }
+       }
+       if(k==n)
+       {
+         ans.push(i);
+       }
+       
+     }
+     console.log(ans);
+}
+palindrome(txt);
