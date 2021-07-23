@@ -129,3 +129,60 @@ console.log(prime(num));
    console.log(ans);
 })(num);
 -------------------------------------------------------------------------------------------------------------------------
+5)
+let txt = ["dad","mom","son",];
+let palindrome = function(arr){
+  let ans =[];
+     for(let i of arr)
+     {
+       let j=0;
+       let k = i.length-1;
+       let n = Math.trunc(i.length/2);
+       while(j<n)
+       {
+         if(i[j]==i[k])
+         {
+           j++;
+           k--;
+         }
+         else{
+           break;
+         }
+       }
+       if(k==n)
+       {
+         ans.push(i);
+       }
+       
+     }
+     console.log(ans);
+}
+palindrome(txt);
+----------------------------------------------
+(function(arr){
+  let ans =[];
+  for(let i of arr)
+  {
+    let j=0;
+    let k = i.length-1;
+    let n = Math.trunc(i.length/2);
+    while(j<n)
+    {
+      if(i[j]==i[k])
+      {
+        j++;
+        k--;
+      }
+      else{
+        break;
+      }
+    }
+    if(k==n)
+    {
+      ans.push(i);
+    }
+    
+  }
+  console.log(ans);
+})(txt);
+--------------------------------------------------------------------------------------------------------------
