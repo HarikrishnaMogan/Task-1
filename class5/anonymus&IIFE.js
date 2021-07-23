@@ -79,7 +79,7 @@ let num = [1,2,3,4,5,6,7,10,15,17];
         ans.push(i);
       }
       else{
-        for(let j=1;j<=Math.sqrt(i);j++)
+        for(let j=1;j<=i;j++)
         {
           if(i%j==0)
           {
@@ -109,7 +109,7 @@ console.log(prime(num));
         ans.push(i);
       }
       else{
-        for(let j=1;j<=Math.sqrt(i);j++)
+        for(let j=1;j<=i;j++)
         {
           if(i%j==0)
           {
