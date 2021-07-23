@@ -186,3 +186,34 @@ palindrome(txt);
   console.log(ans);
 })(txt);
 --------------------------------------------------------------------------------------------------------------
+6)
+let num1 = [1,2,9];
+let num2 = [3,4,7];
+let median = function(){
+  let i=0;
+  let j=0;
+  while(j<3)
+  { 
+    if(num1[i]==undefined)
+    {
+       num1[i] = num2[j];
+       i++;
+       j++;
+    }
+     if(num1[i]>num2[j])
+     {
+       let temp = num1[i];
+       num1[i] = num2[j];
+       num1[i+1] = temp;
+       j++;
+       i=i+1;
+     }
+     else{
+       i++;
+     }
+  }
+  let m = (num1[num2.length]+num1[num2.length-1])/2;
+  console.log(m);
+}
+median();
+---------------------------------------------------------------------------------------------
