@@ -47,3 +47,24 @@ caps();
   console.log(ans);
 })();
 --------------------------------------------------------------------------------
+3)
+let num = [1,2,3,4,5];
+let sum = function(arr){
+  let sum =0;
+   for(let i of arr)
+   {
+      sum +=i;
+   }
+   return sum;
+}
+console.log(sum(num));
+-------------------------------
+(function(arr){
+  let sum =0;
+  for(let i of arr)
+  {
+    sum +=i;
+  }
+  console.log(sum);
+})(num);
+-------------------------------------------------------------------------------------------------
