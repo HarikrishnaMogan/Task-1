@@ -10,3 +10,14 @@ let odd =()=>{
 }
 odd();
 ------------------------------------------
+let num =["hari","kavi"];
+let caps =()=>{
+  let ans =[];
+  for(let i of num)
+  {
+     ans.push(i.toUpperCase());
+  }
+  console.log(ans);
+}
+caps();
+---------------------------------------------
