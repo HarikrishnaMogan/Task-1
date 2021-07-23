@@ -68,3 +68,64 @@ console.log(sum(num));
   console.log(sum);
 })(num);
 -------------------------------------------------------------------------------------------------
+4)
+let num = [1,2,3,4,5,6,7,10,15,17];
+ let prime = function(arr){
+   let ans =[];
+   for(let i of arr)
+   {  let count =0;
+      if(i==2)
+      {
+        ans.push(i);
+      }
+      else{
+        for(let j=1;j<=Math.sqrt(i);j++)
+        {
+          if(i%j==0)
+          {
+            count++;
+          }
+          if(count>2){
+            break;
+          }
+    
+        }
+        if(count ==2)
+        {
+          ans.push(i);
+        }
+      }
+      }
+   return ans;
+}
+console.log(prime(num));
+----------------------------------------
+(function(arr){
+  let ans =[];
+   for(let i of arr)
+   {  let count =0;
+      if(i==2)
+      {
+        ans.push(i);
+      }
+      else{
+        for(let j=1;j<=Math.sqrt(i);j++)
+        {
+          if(i%j==0)
+          {
+            count++;
+          }
+          if(count>2){
+            break;
+          }
+    
+        }
+        if(count ==2)
+        {
+          ans.push(i);
+        }
+      }
+      }
+   console.log(ans);
+})(num);
+-------------------------------------------------------------------------------------------------------------------------
