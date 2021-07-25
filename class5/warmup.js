@@ -117,3 +117,9 @@ function getFullName(firstName, lastName){
  var res = getFullName("guvi","geek");
 console.log(res);
 ------------------------------------------------------
+function getLengthOfWord(word1){
+   return word1.length;
+ }
+ var res = getLengthOfWord("GUVI");
+console.log(res);
+--------------------------------------------------------
