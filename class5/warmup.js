@@ -84,3 +84,9 @@ function CountAnimals(tur,horse,pigs) {
 var legs = CountAnimals(2,3,5)
 console.log(legs);
 -------------------------------------------------
+function frames(num1,num2) {
+  return num1*num2*60;
+}
+var fps = frames(1,2)
+console.log(fps);
+------------------------------------------------
