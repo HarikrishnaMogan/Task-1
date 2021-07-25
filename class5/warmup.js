@@ -193,3 +193,19 @@ var ar2 = function countPositivesSumNegatives(arr) {
 }
 ar2(arr);
 -------------------------------------------------------------
+function getPositives(ar)
+{
+  let ans=[];
+   for(let i of ar)
+   {
+     if(i>=0)
+     {
+       ans.push(i);
+     }
+   }
+   return ans;
+}
+var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+var ar2 = getPositives(ar);
+console.log(ar2);
+-----------------------------------------------------------------
