@@ -138,3 +138,9 @@ function getDistance(x1, y1, x2, y2)
   return Math.sqrt(Math.pow(x1-x2,2)+Math.pow(y1-y2,2));
 }
 ----------------------------------------------------------
+function getNthElement(array,n){
+   return array[n];
+ }
+ var res = getNthElement([1, 3, 5], 1);
+ console.log(res);
+-------------------------------------------------------
