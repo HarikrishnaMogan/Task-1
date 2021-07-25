@@ -123,3 +123,12 @@ function getLengthOfWord(word1){
  var res = getLengthOfWord("GUVI");
 console.log(res);
 --------------------------------------------------------
+function isSameLength(word1, word2){
+  if(word1.length == word2.length)
+  return true;
+  else
+  return false;
+ }
+ var res = isSameLength("hari","kavi");
+console.log(res);
+-------------------------------------------------------
