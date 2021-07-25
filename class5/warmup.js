@@ -271,3 +271,38 @@ function isPrime(n)
    }
 }
 ---------------------------------------------------------
+console.log(getPrimes(10, 100));
+function getPrimes(nPrimes, startAt)
+{
+    let ans=[];
+ for(let i=0;i<nPrimes;i++)
+ {
+    if(isPrime(startAt))
+    {
+        ans.push(startAt);
+    }
+    startAt++;
+ }
+ return ans;
+ 
+}
+function isPrime(n)
+{
+    let count=0;
+   for(let i=1;i<=n;i++)
+   {
+      if(n%i==0)
+      {
+          count++;
+      }
+      if(count >2)
+      {
+          break;
+      }
+   }
+   if(count<=2)
+   {
+       return true;
+   }
+}
+-----------------------------------------------------------------------------
