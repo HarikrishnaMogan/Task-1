@@ -331,3 +331,14 @@ for(let el of ar2)
  return ar1;
 }
 --------------------------------------------------------------------------------
+console.log(sumCSV("1.5, 2.3, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9"));
+function sumCSV(s)
+{
+  let arr = s.split(",").map(Number);
+  let sum=0;
+  for(let i of arr)
+  {
+    sum+=i;
+  }
+  return sum;
+}
