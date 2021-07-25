@@ -150,3 +150,12 @@ function getLastElement(array){
  var res = getLastElement([1, 2, 3, 4]);
  console.log(res);
 ------------------------------------------------------------
+var obj = {
+  mykey: "value"
+ };
+ function getProperty(obj, key) {
+  return obj[key];
+ }
+ var res = getProperty(obj,"mykey");
+ console.log(res);
+-----------------------------------------------------------------
