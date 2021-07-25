@@ -219,3 +219,16 @@ function powersOfTwo(n){
 }
 console.log(powersOfTwo(2))
 ----------------------------------------------------------------
+function findMax(ar)
+{
+  let m = -Infinity;
+  for(let i of ar)
+  {
+    m = Math.max(m,i);
+  }
+  return m;
+}
+var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+var max = findMax(ar);
+console.log(max);
+---------------------------------------------------------------------
