@@ -47,3 +47,14 @@ function getFirstElement(arr) {
 var data = getFirstElement(arr)
 console.log(data);
 -----------------------------------------------
+var arr = [1, 2, 3];
+function hourToSeconds(arr) {
+  for(let i=0;i<arr.length;i++)
+  {
+    arr[i]= +arr[i]*3600;
+  }
+  return arr;
+}
+var data = hourToSeconds(arr)
+console.log(data);
+-----------------------------------------------
