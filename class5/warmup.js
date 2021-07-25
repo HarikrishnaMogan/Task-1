@@ -144,3 +144,9 @@ function getNthElement(array,n){
  var res = getNthElement([1, 3, 5], 1);
  console.log(res);
 -------------------------------------------------------
+function getLastElement(array){
+  return array[array.length-1];
+ }
+ var res = getLastElement([1, 2, 3, 4]);
+ console.log(res);
+------------------------------------------------------------
