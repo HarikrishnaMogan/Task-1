@@ -90,3 +90,13 @@ function frames(num1,num2) {
 var fps = frames(1,2)
 console.log(fps);
 ------------------------------------------------
+
+function isEven(num){
+  if(num%2==0)
+  return true
+  else
+  return false
+ }
+ var even = isEven(5)
+console.log(even);
+-------------------------------------------------------
