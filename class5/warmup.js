@@ -166,3 +166,12 @@ var obj = {};
  var res = addProperty(obj, "mykey");
  console.log(obj);
 ----------------------------------------------------------------
+var obj = {
+  mykey: "value"
+ };
+function removeProperty(obj, key){
+   return delete obj[key];
+ }
+  removeProperty(obj,"mykey");
+ console.log(obj);
+-----------------------------------------------------------------------
