@@ -18,3 +18,11 @@ function getopposite(num)
 var result = getopposite(num);
 console.log(result);
 ------------------------------------------------
+var min = 5;
+function toseconds(min)
+{
+  return min*60;
+}
+var secs = toseconds(min);
+console.log(secs);
+------------------------------------------------
