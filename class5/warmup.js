@@ -175,3 +175,21 @@ function removeProperty(obj, key){
   removeProperty(obj,"mykey");
  console.log(obj);
 -----------------------------------------------------------------------
+var arr = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+var ar2 = function countPositivesSumNegatives(arr) {
+  let count =0;
+  let sum =0;
+   for(let i=0;i<arr.length;i++)
+   {
+     if(i%2==0)
+     {
+        count++;
+     }
+     else{
+       sum +=arr[i];
+     }
+   }
+   console.log(count,sum);
+}
+ar2(arr);
+-------------------------------------------------------------
