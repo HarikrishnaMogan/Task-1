@@ -159,3 +159,10 @@ var obj = {
  var res = getProperty(obj,"mykey");
  console.log(res);
 -----------------------------------------------------------------
+var obj = {};
+ function addProperty(obj, key){
+   return obj[key]=true;
+ }
+ var res = addProperty(obj, "mykey");
+ console.log(obj);
+----------------------------------------------------------------
