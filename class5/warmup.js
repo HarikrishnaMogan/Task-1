@@ -110,3 +110,10 @@ function areBothOdd(num1, num2){
  var res = areBothOdd(1,3)
 console.log(res);
 --------------------------------------------------------
+
+function getFullName(firstName, lastName){
+    return firstName+" "+lastName;
+ }
+ var res = getFullName("guvi","geek");
+console.log(res);
+------------------------------------------------------
