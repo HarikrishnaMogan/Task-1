@@ -96,3 +96,8 @@ for (let num = 2; num <= 20; num += 2) {
     console.log(num)
   }
 -------------------------------------
+let gifts = ["teddy bear", "drone", "doll"];
+for (let i = 0; i < 3; i++) {
+  console.log(`Wrapped ${gifts[i]} and added a bow!`);
+}
+---------------------------------------------------
