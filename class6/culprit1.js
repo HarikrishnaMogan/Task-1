@@ -45,3 +45,14 @@ let message = (login == 'Employee') ?
    'Greetings' : (login == 'Director') ? "greeting":'No login';
 console.log(message);
 ---------------------------------------------------------
+let message;
+if (message == undefined)
+{
+   message = "welcome boss";
+}
+else
+{
+   message = "Go away";
+}
+  console.log(message);
+----------------------------------------------------
