@@ -13,7 +13,7 @@
  <script src="script.js"></script>
 </body>
 </html>
-alert("I’m invoked!");<!-- in script.js-->
+alert("I’m invoked!");
 ---------------------------------------------------------
 let admin=9, fname=10.5; 
 fname = "Guvi";
@@ -40,3 +40,8 @@ if (value == 4) {
       console.log("I couldn't figure out");
 }
 -------------------------------------------
+let login = '';
+let message = (login == 'Employee') ? 
+   'Greetings' : (login == 'Director') ? "greeting":'No login';
+console.log(message);
+---------------------------------------------------------
