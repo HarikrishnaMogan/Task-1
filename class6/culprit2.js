@@ -53,3 +53,13 @@ for (var i = 0; i <=10; i++) {
 }
 console.log(numsArr);
 -----------------------------------------------------------------------------
+//Write a code to add all the numbers in the array
+//Output: 66
+var sum=0;
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <=10; i++) {
+ 
+ sum += +numsArr[i]
+}
+console.log(sum);
+------------------------------------------------------------------------
