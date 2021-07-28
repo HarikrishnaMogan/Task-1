@@ -66,5 +66,19 @@ return a + b
 }
  
 const sum = num.reduce(sums)
-----------------------------------------------------
 console.log(sum)
+----------------------------------------------------
+//Fix the code to rotate an array by k times and return rotated array using IIFE function
+var arr = [1, 2, 3, 6, 8, 6, 1, 9, 10, 12, 13];
+var k = 3;
+let a =[];
+(function() {
+ let n=arr.slice(0,k);
+ for(let i=k;i<arr.length;i++)
+ {
+     a.push(arr[i]);
+ }
+ a=a.concat(n);
+
+ console.log(a);})();
+-----------------------------------------------------------------------
