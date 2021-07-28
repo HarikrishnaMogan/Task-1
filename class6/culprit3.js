@@ -88,6 +88,11 @@ let a =[];
  for (var i = 0; i < arr.length; i++) {
  if (arr[i] % 2 !== 0) {
  console.log(arr[i]);
- }}
+ }}})();
     ---------------------------------------------------------------
-})();
+//Fix the code to reverse.
+      (function(str){
+    str1 = str.split("").reverse().join("");
+    console.log(str1); 
+   })("abcd");
+--------------------------------------------------------------
