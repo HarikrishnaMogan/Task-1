@@ -10,3 +10,16 @@ aa = (f,s,t) => {
    }
    aa(1,2,3);
 -----------------------------------------------------------
+//Fix the code to Sum of the digits present in the number
+ let n = 123;
+console.log(add(n));
+function add(n)
+{
+let sum = 0;
+let k = n.toString();
+for(var i=0;i<k.length;i++){
+ sum+= +k[i]
+ }
+ return sum;
+}
+-------------------------------------------------------------
