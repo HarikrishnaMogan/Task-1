@@ -19,3 +19,15 @@ for (var i = 0; i < 11; i++) {
 }
 console.log(new_string);
 ---------------------------------------------------------------------------
+//Write a code to print from last to first with spaces (Make sure there is no space after the last element 1)
+//Output: 11 10 9 8 7 6 5 4 3 2 1
+ var new_string = "";
+ 
+for (var i = 11; i > 0; i-- ) {
+    if(i!=1)
+    new_string += i+" "
+    else
+    new_string += i
+}
+console.log(new_string);
+---------------------------------------------------------------------------------
