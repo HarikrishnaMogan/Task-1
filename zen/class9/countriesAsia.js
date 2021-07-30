@@ -12,9 +12,16 @@ xhr.send();
 
 function getrequired(values)
 {
-   values.filter(function(v)
+  let countries= values.filter(function(v)
    {
     if(v.region =="Asia")
-     console.log(v.name);
+      return v;
    })
+   console.log(countries);
+   //countries name
+   let countriesname = countries.map(x=>
+    {
+      return x.name;
+    })
+   console.log(countriesname);
 }
