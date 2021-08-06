@@ -1,21 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Contact Form</title>
-    </head>
-    <body>
+<html>
+<head>
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+  <div>
+    <h1>Contact Us</h1>
    <form action="https://google.com" method="GET">
-    <label for ="firstname"><b>FirstName:</b></label><br>
-    <input name="fname" id="firstname"type="text" placeholder="fistname"><br><br>
-    <b>SecondName:</b><br><input name="sname" type="text" placeholder="secondname"><br><br>
-    <b>Mobile:</b><br><input name="mbno" type="number"placeholder="mobile no"><br><br>
-    <b>Email:</b><br><input name="email" placeholder="email"><br><br>
-    <b>Employee Type:</b><br>
-    <b style="text-align:right;">Salaried:</b><input type="radio" name="salaried" value="checked">
-    <b style="text-align:right;">Business:</b><input type="radio" name="business "value ="checked"><br><br>
-    <input type="submit" value="submit">
+    <input class="textinp" type="text" name="name"placeholder="yourname" required><br>
+    <input class="textinp" type="tel" name="num"placeholder="Mobilenumber" required><br>
+    <input class="textinp" type="email"name="email"placeholder="email" required><br>
+    <p style="text-align: left;margin-bottom:0px;"><b>Comments:</b></p><br>
+    <textarea id="area" placeholder="comments" name="comments">
+    </textarea><br><br>
+  
+      <p style="float: left;"><b>Employee type:</b></p>
+      <p style="list-style-type: none;float: left;margin-left: 10px;"><input type="radio" name="sal">Salaried</p>
+      <p style="list-style-type:none;float: left;margin-left: 10px;"><input type="radio" name="sal">Business</p><br><br>
+    <input id="sb" type="submit" value=submit>
+  </form>
+  </div>
 
-
-   </form>  
-    </body>
+  
+  <script src="/js/bootstrap.min.js"> </script>
+ <script src="/js/jquery-3.6.0.min.js"></script>
+</body>
 </html>
+-----------------------------------------------------------------------------------------------
+body{
+    padding:0;
+    margin: 0;
+    background-color:powderblue;
+  
+}
+div{
+  width:500px;
+  height:auto;
+   background-color:tan;
+   padding:20px;
+   text-align: center;
+   margin: auto;
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+.textinp{
+   width:300px;
+   margin:10px 0 20px 0;
+}
+#area
+{
+    margin-bottom: 10px;
+    width:400px;
+    height:200px;
+}
+#sb
+{
+    background-color:saddlebrown;
+    color:black;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    border: none;
+    width:100px;
+    border-radius: 20%;
+}
+#sb:hover{
+   width:200px;
+}
