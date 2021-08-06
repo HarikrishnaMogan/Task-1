@@ -1,15 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Contact Form</title>
-    </head>
-    <body>
-        <form action="https://google.com" method="GET">
-           <b>FirstName:</b> <br> <input placeholder="firstname" name="firstname" type="text" style="width:150px;"> <br><br>
-            <b>LastName:</b><br><input placeholder="lastname" name="lastname" type="text" style ="width: 150px;">  <br><br>
-            <b>Mobile-No:</b><br> <input name="mbno" type="number"style ="width:150px" placeholder="mobile no">  <br><br>
-            <b>Email:</b><br> <input placeholder="email" name ="email"style="width:200px"><br><br>
-            <input type ="submit" value="submit">
-        </form>
-    </body>
+<html>
+<head>
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+  <div>
+    <h1>Contact Us</h1>
+   <form action="https://google.com" method="GET">
+    <input class="textinp" type="text" name="name"placeholder="yourname" required><br>
+    <input class="textinp" type="tel" name="num"placeholder="Mobilenumber" required><br>
+    <input class="textinp" type="email"name="email"placeholder="email" required><br>
+    <p style="text-align: left;margin-bottom:0px;"><b>Comments:</b></p><br>
+    <textarea id="area" placeholder="comments" name="comments">
+    </textarea><br>
+    <input id="sb" type="submit" value=submit>
+  </form>
+  </div>
+
+  
+  <script src="/js/bootstrap.min.js"> </script>
+ <script src="/js/jquery-3.6.0.min.js"></script>
+</body>
 </html>
+-------------------------------------------------------------------------
+body{
+    padding:0;
+    margin: 0;
+    background-color:powderblue;
+    justify-content: center;
+}
+div{
+  width:500px;
+  height:auto;
+   background-color:tan;
+   padding:20px;
+   text-align: center;
+   margin: auto;
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+.textinp{
+   width:300px;
+   margin:10px 0 20px 0;
+}
+#area
+{
+    margin-bottom: 10px;
+    width:400px;
+    height:200px;
+}
+#sb
+{
+    background-color:saddlebrown;
+    color:black;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    border: none;
+    width:100px;
+    border-radius: 20%;
+}
+#sb:hover{
+   width:200px;
+}
