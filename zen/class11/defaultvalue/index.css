@@ -1,0 +1,40 @@
+body{
+    padding:0;
+    margin: 0;
+    background-color:powderblue;
+    justify-content: center;
+}
+div{
+  width:500px;
+  height:auto;
+   background-color:tan;
+   padding:20px;
+   text-align: center;
+   margin: auto;
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+.textinp{
+   width:300px;
+   margin:10px 0 20px 0;
+}
+#area
+{
+    margin-bottom: 10px;
+    width:400px;
+    height:200px;
+}
+#sb
+{
+    background-color:saddlebrown;
+    color:black;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    border: none;
+    width:100px;
+    border-radius: 20%;
+}
+#sb:hover{
+   width:200px;
+}
