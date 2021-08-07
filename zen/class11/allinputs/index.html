@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+ <form>
+    <h4>Name:</h4>
+    <div class="div">
+      <input type="text" name="name">
+    </div>
+   
+    <h4>MobileNo:</h4>
+    <div class="div">
+      <input type="tel" name="mb">
+    </div>
+
+    <h4>Email:</h4>
+    <div class="div">
+      <input type="email" name="email">
+    </div>
+    <h4>Resume:</h4>
+    <div class="div">
+      <input type="file" name="resume">
+    </div>
+    <h4>Date of Birth:</h4>
+    <div class="div">
+      <input type="date" name="birth">
+    </div>
+    <h4>Degree:</h4>
+    <div class="div">
+      <select name="degree">
+        <option value="BE">BE</option>
+        <option value="Msc">Msc</option>
+        <option value="ME">ME</option>
+      </select>
+    </div>
+    <h4>CGPA:</h4>
+    <div class="div">
+      <input list="marks" name="marks">
+      <datalist id="marks">
+        <option value="less than 6">
+        <option value=" greater than 6"> 
+        <option value="7 and above">
+      </datalist>
+    </div>
+    <h4>Degree Type:</h4>
+    <div class="div">
+      <input type="radio" name="part">
+      <span style="margin-right: 3px;">part-time</span>
+      <input type="radio" name="full">
+      <span>Full-time</span>
+    </div>
+    <h4>Introduce yourself:</h4>
+    <div class="div">
+     <textarea name="intro" rows="3" cols="50"></textarea>
+    </div>
+   <h4>Portfolio:</h4>
+   <div class="div">
+     <input type="url" name="url">
+   </div>
+   <h4>All information is true:</h4>
+   <div class="div">
+    <input type="checkbox" name="true">
+  </div>
+  <div >
+    <input type="submit" value="submit">
+  </div>
+   
+ </form>
+  <script src="/js/bootstrap.min.js"> </script>
+ <script src="/js/jquery-3.6.0.min.js"></script>
+</body>
+</html>
